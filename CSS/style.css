@@ -1,0 +1,148 @@
+body{
+    background-color: azure;
+    color: #555;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16;
+    line-height: 1.6rem;
+    margin: 0;
+
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#main-header{
+    background-color: #FF616D;
+    color: aliceblue;
+
+
+}
+
+#navbar{
+    background-color: #26001B;
+    color: #fff;
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 15px;
+}
+
+#showcase{
+    background-image: url('../images/lofi.jpg') ;
+    background-position: center right;
+    min-height: 300px;
+    margin-bottom:30px ;
+    text-align: center;
+}
+
+#showcase h1{
+    color: #fff;
+    font-size: 50px;
+    line-height: 1.6em;
+    padding-top: 50px;
+}
+
+#main{
+    float: left ;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right ;
+    width: 30%;
+    background: #333 ;
+    color: #fff;
+    padding: 0 30px;
+    box-sizing: border-box;
+
+}
+
+#main-footer{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media(max-width: 600px){
+    #main{
+        width: 100%;
+        float: none;
+    }
+    #sidebar{
+        width: 100%;
+        float: none;
+    }
+
+}
+h1{
+    font-family: cursive;
+}
+
+img{
+    border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 500px;
+  height: auto;
+  background-color: #FF616D;
+}
+.main{
+    position: relative;
+    top: 30%;
+    left: 20%;
+    padding: 10% 10% 10% 10%;
+}
+
+.quotes{
+    padding: 10% 10% 10% 10%;
+}
+
+.books{
+    padding: 10% 10% 10% 10%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 2%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-instagram {
+    background: linear-gradient(rgb(92, 6, 126), rgb(238, 34, 44));
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-yourquote {
+    background: #eb920c;
+    color: white;
+  }

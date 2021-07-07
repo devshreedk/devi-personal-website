@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .contact{
+            background-color: #FFEEDB;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #80148f;
+            color: white;
+            padding: 12px 20px;
+            margin-top: 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+          
+        }
+
+        input[type=submit]:hover {
+            background-color: #9844cf;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #81d5d8;
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+            font-family: cursive;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+            font-family: cursive;
+        }
+
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .col-25,
+            .col-75,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+
+        }
+
+        #frame {
+            height: 95vh;
+            width: 98vw;
+        }
+
+        .map {
+            width: 100%;
+            
+        }
+
+        .map-container {
+            width: 50%;
+            margin: auto;
+            
+            height: 350px;
+        }
+
+        iframe {
+            height: 100%;
+            width: 100%;
+        }
+        .button{
+            margin-top: 3rem;
+        }
+
+        .details{
+            margin: auto;
+            font-size: x-large;
+            background-color: #FFBD9B;
+           text-align: center;
+           font-family: cursive;
+        }
+
+        h2{
+            text-align: center;
+            font-family:cursive;
+        }
+
+        .row {
+            width: 100%;
+            /* border: 2px solid black; */
+        }
+
+        .submit-button {
+            text-align: center;
+            margin:auto;
+            display:block;
+        }
+    </style>
+</head>
+
+<body class="contact">
+
+    <div class="details">
+        <span> <b>Phone:</b>  +91951855XXXX</span> 
+        <span> <b>Email:</b>  devshree.kusumkar20@pccoepune.org</span>
+    </div>
+
+    <h2>Contact Form</h2>
+
+    <div class="container">
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+
+                <div class="col-75">
+                    <input type="text" id="cname" name="country" placeholder="Your country...">
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="comments">Comments</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input class="submit-button" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <br>
+
+    <div class="map">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60305.51137274521!2d77.28083550060222!3d19.147342017557538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd1d66bb9d31721%3A0x43892c180155daf1!2sNanded%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1625579324727!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+</body>
+
+</html>
